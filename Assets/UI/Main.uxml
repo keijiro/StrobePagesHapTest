@@ -1,3 +1,9 @@
 <engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <engine:Label text="URP Template Project" style="color: rgb(255, 255, 255);" />
+    <engine:VisualElement style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; justify-content: center;">
+        <engine:VisualElement name="main-raw" style="position: absolute; left: 0; right: 0; aspect-ratio: 3.75;">
+            <engine:VisualElement name="flipbook" style="background-image: url(&quot;project://database/Assets/Flipbook/Flipbook.renderTexture?fileID=8400000&amp;guid=037b4eca4e24d403dbe2b9b4e10bee50&amp;type=2#Flipbook&quot;); position: absolute; top: 0; left: 0; right: 0; bottom: 0;"/>
+            <engine:VisualElement name="left-column" style="background-color: rgba(255, 0, 0, 0.08); position: absolute; left: 0; bottom: 0; top: 0; aspect-ratio: 0.75;"/>
+            <engine:VisualElement name="right-column" style="background-color: rgba(255, 0, 0, 0.08); position: absolute; bottom: 0; top: 0; aspect-ratio: 0.75; right: 0;"/>
+        </engine:VisualElement>
+    </engine:VisualElement>
 </engine:UXML>
