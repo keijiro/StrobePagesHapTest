@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 231048557}
   - component: {fileID: 231048556}
   m_Layer: 0
-  m_Name: UI Document
+  m_Name: Monitor UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -184,7 +184,7 @@ GameObject:
   m_Component:
   - component: {fileID: 548964268}
   m_Layer: 0
-  m_Name: Projector
+  m_Name: 09 Monitor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -199,12 +199,45 @@ Transform:
   m_GameObject: {fileID: 548964267}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 3000, y: 1000, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 231048557}
   - {fileID: 829016485}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &708108417
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 708108418}
+  m_Layer: 0
+  m_Name: 01 Input
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &708108418
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708108417}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -1000, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1152344035}
+  - {fileID: 2140875987}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &829016481
@@ -219,8 +252,8 @@ GameObject:
   - component: {fileID: 829016484}
   - component: {fileID: 829016483}
   m_Layer: 0
-  m_Name: Projector Camera
-  m_TagString: MainCamera
+  m_Name: Monitor Camera
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -335,6 +368,61 @@ Transform:
   m_Children: []
   m_Father: {fileID: 548964268}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1152344034
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1152344035}
+  - component: {fileID: 1152344036}
+  m_Layer: 0
+  m_Name: Video Source
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1152344035
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152344034}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 708108418}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1152344036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152344034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40ff2e515a81541cbb664860588e2c6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Klak.TestTools.Runtime::Klak.TestTools.ImageSource
+  _generatorShader: {fileID: 4800000, guid: 3f7d8db4748f54c638a46cec0b0e61f8, type: 3}
+  _sourceType: 1
+  _outputResolution: {x: 1440, y: 1080}
+  _outputDestination: {fileID: 0}
+  <SourceTexture>k__BackingField: {fileID: 2800000, guid: 0bc2db5416610439da66d8803134194f, type: 3}
+  _sourceVideo: {fileID: 32900000, guid: 125cfc836b50942e0821ed758227dad4, type: 3}
+  <SourceCamera>k__BackingField: {fileID: 0}
+  _sourceUrl: 
+  _sourceName: MacBook Pro Camera
+  _deviceResolution: {x: 1920, y: 1080}
+  _deviceFrameRate: 30
 --- !u!1 &1411473415
 GameObject:
   m_ObjectHideFlags: 0
@@ -350,7 +438,7 @@ GameObject:
   - component: {fileID: 1411473422}
   m_Layer: 0
   m_Name: Flipbook Camera
-  m_TagString: MainCamera
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -631,7 +719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Klak.Hap::Klak.Hap.HapPlayer
   _pathMode: 0
-  _filePath: Test.mov
+  _filePath: Flower.mov
   _time: 0
   _speed: 5
   _loop: 1
@@ -663,7 +751,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1753600787}
   m_Layer: 0
-  m_Name: Flipbook
+  m_Name: 02 Flipbook
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -682,14 +770,62 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1411473419}
   - {fileID: 1576989471}
   - {fileID: 1472467972}
+  - {fileID: 1411473419}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2140875986
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2140875987}
+  - component: {fileID: 2140875988}
+  m_Layer: 0
+  m_Name: Prefilter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2140875987
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140875986}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 708108418}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2140875988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140875986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4120f415ee44947fca91bf1445e18cd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Karbon.Prefilter
+  _source: {fileID: 1152344036}
+  _resources: {fileID: 11400000, guid: c0532b829d2dd49d99fa8e8df757816e, type: 2}
+  _target: {fileID: 8600000, guid: 5916b25ef710149db8d756ba65b68250, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 708108418}
   - {fileID: 1753600787}
   - {fileID: 548964268}

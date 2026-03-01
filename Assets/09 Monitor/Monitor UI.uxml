@@ -1,0 +1,10 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement name="root-container" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; justify-content: center;">
+        <engine:VisualElement name="main-raw" style="position: absolute; left: 0; right: 0; aspect-ratio: 3.75;">
+            <engine:VisualElement name="flipbook" style="background-image: url(&quot;project://database/Assets/02%20Flipbook/Flipbook%20Render.renderTexture?fileID=8400000&amp;guid=037b4eca4e24d403dbe2b9b4e10bee50&amp;type=2#Flipbook Render&quot;); position: absolute; top: 0; left: 0; right: 0; bottom: 0;"/>
+            <engine:VisualElement name="camera" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; -unity-background-scale-mode: scale-and-crop; -unity-material: url(&quot;project://database/Assets/00%20Common/UI/UI%20Additive.shadergraph?fileID=-876546973899608171&amp;guid=ab773ae7481a94102b3d39825f7a3d93&amp;type=3#UI Additive&quot;); background-image: url(&quot;project://database/Assets/01%20Input/Prefilter%20Render.asset?fileID=8600000&amp;guid=5916b25ef710149db8d756ba65b68250&amp;type=2#Prefilter Render&quot;);"/>
+            <engine:VisualElement name="left-column" style="position: absolute; left: 0; bottom: 0; top: 0; aspect-ratio: 0.75; -unity-background-scale-mode: scale-and-crop; background-image: url(&quot;project://database/Assets/01%20Input/Prefilter%20Render.asset?fileID=8600000&amp;guid=5916b25ef710149db8d756ba65b68250&amp;type=2#Prefilter Render&quot;);"/>
+            <engine:VisualElement name="right-column" style="position: absolute; bottom: 0; top: 0; aspect-ratio: 0.75; right: 0; -unity-background-scale-mode: scale-and-crop; background-image: url(&quot;project://database/Assets/01%20Input/Prefilter%20Render.asset?fileID=8600000&amp;guid=5916b25ef710149db8d756ba65b68250&amp;type=2#Prefilter Render&quot;);"/>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>
