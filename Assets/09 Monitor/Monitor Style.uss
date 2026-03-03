@@ -1,3 +1,42 @@
-:root {
+.root-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+}
 
+.row-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    aspect-ratio: 3.75;
+}
+
+.main-row {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+.left-column {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    aspect-ratio: 0.75;
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+.right-column {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    aspect-ratio: 0.75;
+    -unity-background-scale-mode: scale-and-crop;
 }
