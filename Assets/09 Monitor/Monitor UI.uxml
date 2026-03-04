@@ -2,10 +2,10 @@
     <Style src="project://database/Assets/09%20Monitor/Monitor%20Style.uss?fileID=7433441132597879392&amp;guid=10c3c48e6829a421ea1606a270fd7b73&amp;type=3"/>
     <engine:VisualElement name="root-container" class="root-container">
         <engine:VisualElement name="row-container" class="row-container">
-            <engine:VisualElement name="flipbook" class="main-row" style="background-image: url(&quot;project://database/Assets/02%20Flipbook/Flipbook%20Render.renderTexture?fileID=8400000&amp;guid=037b4eca4e24d403dbe2b9b4e10bee50&amp;type=2#Flipbook Render&quot;);"/>
-            <engine:VisualElement name="camera" class="main-row" style="-unity-material: url(&quot;project://database/Assets/00%20Common/UI/UI%20Additive.shadergraph?fileID=-876546973899608171&amp;guid=ab773ae7481a94102b3d39825f7a3d93&amp;type=3#UI Additive&quot;); background-image: url(&quot;project://database/Assets/01%20Input/Head%20FG.asset?fileID=8600000&amp;guid=366edf0b66dee407ebdf5593c78dbe62&amp;type=2#Head FG&quot;);"/>
-            <engine:VisualElement name="left-column" class="left-column" style="background-image: url(&quot;project://database/Assets/01%20Input/Portrait.asset?fileID=8600000&amp;guid=ca7835b2054cd4c509f6e01f8144854f&amp;type=2#Portrait&quot;);"/>
-            <engine:VisualElement name="right-column" class="right-column" style="background-image: url(&quot;project://database/Assets/01%20Input/Portrait.asset?fileID=8600000&amp;guid=ca7835b2054cd4c509f6e01f8144854f&amp;type=2#Portrait&quot;);"/>
+            <engine:VisualElement name="flipbook" class="main-row" style="background-image: url(&quot;project://database/Assets/03%20VFX/VFX%20Render.renderTexture?fileID=8400000&amp;guid=7fb43ffbbe64e4e54a986a3b6ab5913a&amp;type=2#VFX Render&quot;);"/>
+            <engine:VisualElement name="camera" class="main-row" style="-unity-material: url(&quot;project://database/Assets/00%20Common/UI/UI%20Additive.shadergraph?fileID=-876546973899608171&amp;guid=ab773ae7481a94102b3d39825f7a3d93&amp;type=3#UI Additive&quot;); background-image: url(&quot;project://database/Assets/01%20Input/Posterizer/Head%20FG.asset?fileID=8600000&amp;guid=366edf0b66dee407ebdf5593c78dbe62&amp;type=2#Head FG&quot;);"/>
+            <engine:VisualElement name="left-column" class="left-column" style="background-image: url(&quot;project://database/Assets/01%20Input/Posterizer/Portrait.asset?fileID=8600000&amp;guid=ca7835b2054cd4c509f6e01f8144854f&amp;type=2#Portrait&quot;);"/>
+            <engine:VisualElement name="right-column" class="right-column" style="background-image: url(&quot;project://database/Assets/01%20Input/Posterizer/Portrait.asset?fileID=8600000&amp;guid=ca7835b2054cd4c509f6e01f8144854f&amp;type=2#Portrait&quot;);"/>
         </engine:VisualElement>
     </engine:VisualElement>
 </engine:UXML>

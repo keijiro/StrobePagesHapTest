@@ -7,7 +7,9 @@
     "jp.keijiro.klak.hap": "1.0.0",
     "jp.keijiro.klak.testtools": "3.1.1",
     "jp.keijiro.klutter-tools": "2.6.0",
+    "jp.keijiro.shadergraphassets": "2.5.3",
     "jp.keijiro.strobe-pages": "1.2.0",
+    "jp.keijiro.vfxgraphassets": "3.10.1",
     "com.unity.modules.uielements": "1.0.0"
   },
   "scopedRegistries": [
