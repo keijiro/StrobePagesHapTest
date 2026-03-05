@@ -188,6 +188,16 @@
       },
       "url": "https://registry.npmjs.com"
     },
+    "jp.keijiro.kino-glitch.universal": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.render-pipelines.universal": "17.0.0",
+        "jp.keijiro.noiseshader": "3.0.1"
+      },
+      "url": "https://registry.npmjs.com"
+    },
     "jp.keijiro.klak.hap": {
       "version": "1.0.0",
       "depth": 0,

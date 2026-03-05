@@ -33,7 +33,7 @@ public sealed class ShaderPropertyBinder : MonoBehaviour
             force = true;
         }
 
-        var value = _source.position.x;
+        var value = _source.localPosition.x;
         if (!force && Mathf.Approximately(_lastValue, value)) return;
 
         _renderer.GetPropertyBlock(_propertyBlock);

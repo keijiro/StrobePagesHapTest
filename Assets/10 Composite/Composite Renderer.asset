@@ -14,6 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Karbon.CompositeRendererFeature
   m_Active: 1
   _passEvent: 600
+--- !u!114 &-66656614916272776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7530d9b1c28e471998cd8b99935d3b7, type: 3}
+  m_Name: AnalogGlitchRendererFeature
+  m_EditorClassIdentifier: KinoGlitch.Runtime::KinoGlitch.AnalogGlitchRendererFeature
+  m_Active: 1
+  _passEvent: 600
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40,7 +54,8 @@ MonoBehaviour:
     probeVolumeBlendStatesCS: {fileID: 0}
   m_RendererFeatures:
   - {fileID: -5351138426631849938}
-  m_RendererFeatureMap: 2e78aad8f3efbcb5
+  - {fileID: -66656614916272776}
+  m_RendererFeatureMap: 2e78aad8f3efbcb5784dfc71293013ff
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 0}
   m_AssetVersion: 3

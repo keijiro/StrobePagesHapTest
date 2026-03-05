@@ -217,6 +217,7 @@ GameObject:
   - component: {fileID: 291904334}
   - component: {fileID: 291904333}
   - component: {fileID: 291904335}
+  - component: {fileID: 291904336}
   m_Layer: 0
   m_Name: Composite Camera
   m_TagString: Untagged
@@ -353,6 +354,24 @@ MonoBehaviour:
   <BGColor>k__BackingField: {r: 0, g: 0.14216995, b: 1, a: 1}
   <FGColor>k__BackingField: {r: 1, g: 0, b: 0, a: 1}
   _shader: {fileID: 4800000, guid: 73b77468c94d646b781609085699fbb0, type: 3}
+--- !u!114 &291904336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 291904331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 897555bfb049f43c0a341b72b6883d00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: KinoGlitch.Runtime::KinoGlitch.AnalogGlitchController
+  <ScanLineJitter>k__BackingField: 0
+  <VerticalJump>k__BackingField: 0
+  <HorizontalShake>k__BackingField: 0
+  <ColorDrift>k__BackingField: 0
+  <HorizontalRipple>k__BackingField: 0.268
+  _shader: {fileID: 4800000, guid: 754922b6576fa498bbb2fbbebfe256ef, type: 3}
 --- !u!1 &305804264
 GameObject:
   m_ObjectHideFlags: 0
@@ -518,7 +537,7 @@ VisualEffect:
   m_PropertySheet:
     m_Float:
       m_Array:
-      - m_Value: 0.2
+      - m_Value: 0.4
         m_Name: Throttle
         m_Overridden: 1
     m_Vector2f:
@@ -1640,7 +1659,7 @@ Transform:
   m_GameObject: {fileID: 1583078055}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -6.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1891,7 +1910,7 @@ Transform:
   m_GameObject: {fileID: 1977628454}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.2, y: 0, z: 0}
+  m_LocalPosition: {x: 0.4, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
