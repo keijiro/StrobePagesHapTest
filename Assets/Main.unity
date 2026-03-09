@@ -220,6 +220,7 @@ GameObject:
   - component: {fileID: 291904336}
   - component: {fileID: 291904337}
   - component: {fileID: 291904338}
+  - component: {fileID: 291904339}
   m_Layer: 0
   m_Name: Composite Camera
   m_TagString: Untagged
@@ -398,7 +399,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 291904331}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 16ef0bdf4969642e6b835a966ce5b812, type: 3}
   m_Name: 
@@ -471,6 +472,51 @@ MonoBehaviour:
       m_Action: Glitch 4
       m_Flags: 0
     m_Flags: 0
+--- !u!114 &291904339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 291904331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 110b401dda72443f1a7fda05ab0fe505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Karbon.PadInputHandler
+  _action:
+    m_Name: Action
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 525c5036-166a-4931-a21d-4c45876ac3c1
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: c3b46a5a-bda7-4c60-912f-723d7886027e
+      m_Path: <MidiDevice>/note080
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Action
+      m_Flags: 0
+    m_Flags: 0
+  _releaseTime: 0.5
+  _onValueChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 291904336}
+        m_TargetAssemblyTypeName: KinoGlitch.AnalogGlitchController, KinoGlitch.Runtime
+        m_MethodName: set_ScanLineJitter
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &305804264
 GameObject:
   m_ObjectHideFlags: 0
