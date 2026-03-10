@@ -11,6 +11,7 @@ public sealed class PadInputHandler : MonoBehaviour
 
     [Space, SerializeField] InputAction _input = null;
     [Space, SerializeField] UnityEvent<float> _valueTarget = null;
+    [Space, SerializeField] UnityEvent<float> _triggerTarget = null;
 
     public float Value { get; private set; }
 
@@ -39,6 +40,7 @@ public sealed class PadInputHandler : MonoBehaviour
     {
         _startTime = context.time;
         _strength = context.ReadValue<float>();
+        _triggerTarget?.Invoke(_strength);
     }
 
     void OnPerformed(InputAction.CallbackContext context)

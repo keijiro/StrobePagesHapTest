@@ -385,11 +385,92 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88a7571d970044db8e00756f058f9e98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: FlashGlitch::FlashGlitch.FlashGlitchController
-  <ReleaseTime1>k__BackingField: 0.25
-  <ReleaseTime2>k__BackingField: 0.5
+  <ReleaseTime1>k__BackingField: 0.4
+  <ReleaseTime2>k__BackingField: 0.9
   <Hue>k__BackingField: 0.7
   <Seed>k__BackingField: 364
   _shader: {fileID: 4800000, guid: a06c33c946564cd19c5200c852eb0551, type: 3}
+--- !u!1 &295330435
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 295330436}
+  - component: {fileID: 295330437}
+  m_Layer: 0
+  m_Name: Flash Glitch 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &295330436
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295330435}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1060484555}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &295330437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295330435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 110b401dda72443f1a7fda05ab0fe505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Karbon.PadInputHandler
+  <ReleaseTime>k__BackingField: 1
+  <DecayExponent>k__BackingField: 1
+  _input:
+    m_Name: Input
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 5694dcfd-3c70-415e-bb7d-46e4237320be
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: e782df32-2682-4ac9-9e79-d7d80954f5b3
+      m_Path: <MidiDevice>/note076
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Input
+      m_Flags: 0
+    m_Flags: 0
+  _valueTarget:
+    m_PersistentCalls:
+      m_Calls: []
+  _triggerTarget:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 291904337}
+        m_TargetAssemblyTypeName: FlashGlitch.FlashGlitchController, FlashGlitch
+        m_MethodName: TriggerEffect1
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &305804264
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,6 +593,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _triggerTarget:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &449443676
 GameObject:
   m_ObjectHideFlags: 0
@@ -1286,6 +1370,8 @@ Transform:
   m_Children:
   - {fileID: 1986241847}
   - {fileID: 1596775308}
+  - {fileID: 295330436}
+  - {fileID: 1547270760}
   m_Father: {fileID: 708108418}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1152344034
@@ -1736,6 +1822,87 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1753600787}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1547270759
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1547270760}
+  - component: {fileID: 1547270761}
+  m_Layer: 0
+  m_Name: Flash Glitch 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1547270760
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547270759}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1060484555}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1547270761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547270759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 110b401dda72443f1a7fda05ab0fe505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Karbon.PadInputHandler
+  <ReleaseTime>k__BackingField: 1
+  <DecayExponent>k__BackingField: 1
+  _input:
+    m_Name: Input
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 5694dcfd-3c70-415e-bb7d-46e4237320be
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: e782df32-2682-4ac9-9e79-d7d80954f5b3
+      m_Path: <MidiDevice>/note077
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Input
+      m_Flags: 0
+    m_Flags: 0
+  _valueTarget:
+    m_PersistentCalls:
+      m_Calls: []
+  _triggerTarget:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 291904337}
+        m_TargetAssemblyTypeName: FlashGlitch.FlashGlitchController, FlashGlitch
+        m_MethodName: TriggerEffect2
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1576989469
 GameObject:
   m_ObjectHideFlags: 0
@@ -2004,6 +2171,9 @@ MonoBehaviour:
   _valueTarget:
     m_PersistentCalls:
       m_Calls: []
+  _triggerTarget:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1603278445
 GameObject:
   m_ObjectHideFlags: 0
@@ -2117,6 +2287,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _triggerTarget:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1646683657
 GameObject:
   m_ObjectHideFlags: 0
@@ -2297,6 +2470,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _triggerTarget:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2136010312
 GameObject:
   m_ObjectHideFlags: 0
