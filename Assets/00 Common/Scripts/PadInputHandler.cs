@@ -12,9 +12,11 @@ public sealed class PadInputHandler : MonoBehaviour
     [Space, SerializeField] InputAction _input = null;
     [Space, SerializeField] UnityEvent<float> _valueTarget = null;
 
+    public float Value { get; private set; }
+
     const float kHoldTime = 0.2f;
 
-    float _value, _strength, _decayRate;
+    float _strength, _decayRate;
     double _startTime;
 
     void OnEnable()
@@ -47,7 +49,7 @@ public sealed class PadInputHandler : MonoBehaviour
         if (context.time - _startTime < kHoldTime)
         {
             // Short press: Decay from 1
-            _value = 1;
+            Value = 1;
             _decayRate = 1 / (ReleaseTime * Mathf.Pow(_strength, DecayExponent));
         }
         else
@@ -59,8 +61,8 @@ public sealed class PadInputHandler : MonoBehaviour
 
     void Update()
     {
-        _valueTarget?.Invoke(_value);
-        _value = Mathf.Max(_input.ReadValue<float>(), _value - _decayRate * Time.deltaTime);
+        _valueTarget?.Invoke(Value);
+        Value = Mathf.Max(_input.ReadValue<float>(), Value - _decayRate * Time.deltaTime);
     }
 }
 

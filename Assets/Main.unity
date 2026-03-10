@@ -524,7 +524,7 @@ GameObject:
   - component: {fileID: 449443681}
   - component: {fileID: 449443680}
   - component: {fileID: 449443679}
-  - component: {fileID: 449443678}
+  - component: {fileID: 449443682}
   m_Layer: 10
   m_Name: Burn Particles
   m_TagString: Untagged
@@ -547,23 +547,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1603278446}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &449443678
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 449443676}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 139d54a04b8be455f876761e38676f0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Klak.Vfx.Runtime::Klak.Vfx.VFXPositionToFloatBinder
-  Property:
-    m_Name: Throttle
-  Target: {fileID: 1977628455}
-  ReferenceAxis: 0
-  UseGlobal: 0
 --- !u!114 &449443679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -578,7 +561,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.VisualEffectGraph.Runtime::UnityEngine.VFX.Utility.VFXPropertyBinder
   m_ExecuteInEditor: 1
   m_Bindings:
-  - {fileID: 449443678}
+  - {fileID: 449443682}
   m_VisualEffect: {fileID: 449443681}
 --- !u!73398921 &449443680
 VFXRenderer:
@@ -645,7 +628,7 @@ VisualEffect:
   m_PropertySheet:
     m_Float:
       m_Array:
-      - m_Value: 0.4
+      - m_Value: 0
         m_Name: Throttle
         m_Overridden: 1
     m_Vector2f:
@@ -668,6 +651,21 @@ VisualEffect:
       m_Array: []
     m_Bool:
       m_Array: []
+--- !u!114 &449443682
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449443676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d9b9c01652774618ae84c3f0285e1ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Karbon.VFXPadInputValueBinder
+  Property:
+    m_Name: Throttle
+  Source: {fileID: 1596775309}
 --- !u!1 &548185934
 GameObject:
   m_ObjectHideFlags: 0
@@ -714,7 +712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7dd336fd4c054da8b9505c41e37c5a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ShaderPropertyBinder
-  _source: {fileID: 1977628455}
+  _source: {fileID: 1596775309}
   _propertyName: _Throttle
 --- !u!23 &548185937
 MeshRenderer:
@@ -1287,6 +1285,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1986241847}
+  - {fileID: 1596775308}
   m_Father: {fileID: 708108418}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1152344034
@@ -1939,6 +1938,72 @@ Camera:
   m_OcclusionCulling: 0
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1 &1596775307
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1596775308}
+  - component: {fileID: 1596775309}
+  m_Layer: 0
+  m_Name: Burn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1596775308
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596775307}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1060484555}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1596775309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596775307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 110b401dda72443f1a7fda05ab0fe505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Karbon.PadInputHandler
+  <ReleaseTime>k__BackingField: 1
+  <DecayExponent>k__BackingField: 1
+  _input:
+    m_Name: Input
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 5694dcfd-3c70-415e-bb7d-46e4237320be
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: e782df32-2682-4ac9-9e79-d7d80954f5b3
+      m_Path: <MidiDevice>/note083
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Input
+      m_Flags: 0
+    m_Flags: 0
+  _valueTarget:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1603278445
 GameObject:
   m_ObjectHideFlags: 0
@@ -1972,7 +2037,6 @@ Transform:
   - {fileID: 2136010313}
   - {fileID: 548185935}
   - {fileID: 449443677}
-  - {fileID: 1977628455}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1639385699
@@ -2120,37 +2184,6 @@ Transform:
   - {fileID: 1472467972}
   - {fileID: 1411473419}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1977628454
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1977628455}
-  m_Layer: 10
-  m_Name: Burn Throttle
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1977628455
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1977628454}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.4, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1603278446}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1986241846
 GameObject:

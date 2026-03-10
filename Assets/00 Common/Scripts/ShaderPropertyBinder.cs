@@ -1,9 +1,11 @@
 using UnityEngine;
 
+namespace Karbon {
+
 [ExecuteInEditMode]
 public sealed class ShaderPropertyBinder : MonoBehaviour
 {
-    [SerializeField] Transform _source = null;
+    [SerializeField] PadInputHandler _source = null;
     [SerializeField] string _propertyName = "_Value";
 
     Renderer _renderer;
@@ -33,7 +35,7 @@ public sealed class ShaderPropertyBinder : MonoBehaviour
             force = true;
         }
 
-        var value = _source.localPosition.x;
+        var value = _source.Value;
         if (!force && Mathf.Approximately(_lastValue, value)) return;
 
         _renderer.GetPropertyBlock(_propertyBlock);
@@ -43,3 +45,5 @@ public sealed class ShaderPropertyBinder : MonoBehaviour
         _lastValue = value;
     }
 }
+
+} // namespace Karbon
