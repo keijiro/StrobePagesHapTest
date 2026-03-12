@@ -378,6 +378,7 @@ GameObject:
   - component: {fileID: 291904335}
   - component: {fileID: 291904336}
   - component: {fileID: 291904337}
+  - component: {fileID: 291904338}
   m_Layer: 0
   m_Name: Composite Camera
   m_TagString: Untagged
@@ -549,6 +550,25 @@ MonoBehaviour:
   <Hue>k__BackingField: 0.7
   <Seed>k__BackingField: 364
   _shader: {fileID: 4800000, guid: a06c33c946564cd19c5200c852eb0551, type: 3}
+--- !u!114 &291904338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 291904331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1722a1d0f69cc40f3a526d900f52ce04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Kino.Feedback.Universal.Runtime::Kino.Feedback.Universal.FeedbackController
+  <Tint>k__BackingField: {r: 1, g: 1, b: 1, a: 1}
+  <HueShift>k__BackingField: 0
+  <Offset>k__BackingField: {x: 0, y: 0}
+  <Rotation>k__BackingField: 0
+  <Scale>k__BackingField: 1.1
+  <SampleMode>k__BackingField: 0
+  _shader: {fileID: 4800000, guid: 254f19bceb1da4b7d9c8edb95bd9f8f9, type: 3}
 --- !u!1 &295330435
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,7 +13,6 @@ Shader "Hidden/Karbon/Composite"
 HLSLINCLUDE
 
 #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
-#include "Packages/com.unity.render-pipelines.core/Runtime/Utilities/Blit.hlsl"
 #include "Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl"
 
 TEXTURE2D(_BGPlane);
@@ -24,6 +23,14 @@ TEXTURE2D(_OverlayPlane);
 float4 _BGColor;
 float4 _FGColor;
 
+void Vert(uint vertexID : VERTEXID_SEMANTIC,
+          out float4 outPosition : SV_Position,
+          out float2 outTexCoord : TEXCOORD0)
+{
+    outPosition = GetFullScreenTriangleVertexPosition(vertexID);
+    outTexCoord = GetFullScreenTriangleTexCoord(vertexID);
+}
+
 float4 AlphaOver(float4 dst, float4 src)
 {
     dst.rgb = lerp(dst.rgb, src.rgb, src.a);
@@ -31,9 +38,10 @@ float4 AlphaOver(float4 dst, float4 src)
     return dst;
 }
 
-float4 Frag(Varyings input) : SV_Target
+half4 Frag(float4 position : SV_Position,
+           float2 texCoord : TEXCOORD) : SV_Target0
 {
-    float2 uv = input.texcoord;
+    float2 uv = texCoord;
 
     float4 bg = SAMPLE_TEXTURE2D(_BGPlane, sampler_LinearClamp, uv);
     float4 fg1 = SAMPLE_TEXTURE2D(_FGPlane1, sampler_LinearClamp, uv);
@@ -48,7 +56,7 @@ float4 Frag(Varyings input) : SV_Target
 
     float3 screened = 1 - (1 - comp.rgb) * (1 - ov.rgb);
     comp.rgb = lerp(comp.rgb, screened, ov.a);
-    comp.a = 1;
+    if (comp.a < 0.5) discard;
 
     return comp;
 }
