@@ -752,6 +752,14 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Input
       m_Flags: 0
+    - m_Name: 
+      m_Id: 305660d9-945b-4104-9eee-b9bcc7879e47
+      m_Path: <MidiDevice>/note046
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Input
+      m_Flags: 0
     m_Flags: 0
   _valueTarget:
     m_PersistentCalls:
@@ -1900,7 +1908,15 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: e782df32-2682-4ac9-9e79-d7d80954f5b3
-      m_Path: <MidiDevice>/note045
+      m_Path: <MidiDevice>/note036
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Input
+      m_Flags: 0
+    - m_Name: 
+      m_Id: a6aab5d4-6068-47d8-a52f-44fe1b7bfb5c
+      m_Path: <MidiDevice>/note071
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -2073,7 +2089,15 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: e782df32-2682-4ac9-9e79-d7d80954f5b3
-      m_Path: <MidiDevice>/note039
+      m_Path: <MidiDevice>/note038
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Input
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 95b5d04e-5301-4118-9358-b6f47c2d8924
+      m_Path: <MidiDevice>/note069
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -2519,7 +2543,7 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: 07c6fdba-c4d1-4905-9c53-f3cff6468621
-      m_Path: <MidiDevice>/note058
+      m_Path: <MidiDevice>/note059
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -2953,6 +2977,14 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Input
       m_Flags: 0
+    - m_Name: 
+      m_Id: f701041c-7433-4dee-80cb-d87ecb5b8bf5
+      m_Path: <MidiDevice>/note039
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Input
+      m_Flags: 0
     m_Flags: 0
   _valueTarget:
     m_PersistentCalls:
@@ -3230,7 +3262,15 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: e782df32-2682-4ac9-9e79-d7d80954f5b3
-      m_Path: <MidiDevice>/note046
+      m_Path: <MidiDevice>/note040
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Input
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 4e6063b9-22e6-4454-bf30-f7d7be93e993
+      m_Path: <MidiDevice>/note075
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -3422,6 +3462,14 @@ MonoBehaviour:
     - m_Name: 
       m_Id: e2071cbc-0e8a-4eba-a6bf-b2460c2670f1
       m_Path: <MidiDevice>/note080
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Input
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 5248c057-a81a-466c-8c95-ffdec0cd97d0
+      m_Path: <MidiDevice>/note051
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -3814,7 +3862,15 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: e782df32-2682-4ac9-9e79-d7d80954f5b3
-      m_Path: <MidiDevice>/note038
+      m_Path: <MidiDevice>/note037
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Input
+      m_Flags: 0
+    - m_Name: 
+      m_Id: ea61c4b6-339d-46b7-9769-28dc98002723
+      m_Path: <MidiDevice>/note070
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -3966,6 +4022,14 @@ MonoBehaviour:
     - m_Name: 
       m_Id: e782df32-2682-4ac9-9e79-d7d80954f5b3
       m_Path: <MidiDevice>/note078
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Input
+      m_Flags: 0
+    - m_Name: 
+      m_Id: bc9769a2-699d-4353-b072-18c334d50f1c
+      m_Path: <MidiDevice>/note045
       m_Interactions: 
       m_Processors: 
       m_Groups: 
