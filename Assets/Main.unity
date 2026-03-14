@@ -512,7 +512,7 @@ MonoBehaviour:
   <FGPlane1>k__BackingField: {fileID: 8400000, guid: 7fb43ffbbe64e4e54a986a3b6ab5913a, type: 2}
   <FGPlane2>k__BackingField: {fileID: 8600000, guid: 366edf0b66dee407ebdf5593c78dbe62, type: 2}
   <OverlayPlane>k__BackingField: {fileID: 8400000, guid: 59e48a7d1f0b74c30879510f4d399b2e, type: 2}
-  <BGColor>k__BackingField: {r: 0, g: 0.14216995, b: 1, a: 1}
+  <BGColor>k__BackingField: {r: 0.5283019, g: 0.5283019, b: 0.5283019, a: 1}
   <FGColor>k__BackingField: {r: 1, g: 0, b: 0, a: 1}
   _shader: {fileID: 4800000, guid: 73b77468c94d646b781609085699fbb0, type: 3}
 --- !u!114 &291904336
@@ -2131,8 +2131,65 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1882181185}
+  - {fileID: 975670704}
   m_Father: {fileID: 708108418}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &975670703
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 975670704}
+  - component: {fileID: 975670705}
+  m_Layer: 0
+  m_Name: Palette
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &975670704
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975670703}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 973666791}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &975670705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975670703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1f0bb73dc9894190b4567e05c0969ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Karbon.CompositePaletteSelector
+  _target: {fileID: 291904335}
+  _presets:
+  - BGColor: {r: 0.5283019, g: 0.5283019, b: 0.5283019, a: 1}
+    FGColor: {r: 1, g: 0, b: 0, a: 1}
+  - BGColor: {r: 0.5377358, g: 0, b: 0.29421812, a: 1}
+    FGColor: {r: 1, g: 0.9822126, b: 0, a: 1}
+  - BGColor: {r: 0, g: 0.509434, b: 0.37092024, a: 1}
+    FGColor: {r: 0.16509432, g: 1, b: 0.9913824, a: 1}
+  - BGColor: {r: 0.30718228, g: 0.4291226, b: 0.5566038, a: 1}
+    FGColor: {r: 1, g: 0, b: 0.61178017, a: 1}
+  - BGColor: {r: 0.07027007, g: 0, b: 0.735849, a: 1}
+    FGColor: {r: 1, g: 1, b: 1, a: 0}
 --- !u!1 &1060484554
 GameObject:
   m_ObjectHideFlags: 0
