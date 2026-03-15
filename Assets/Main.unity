@@ -4287,6 +4287,9 @@ MonoBehaviour:
   _videoFiles:
   - Flower.mov
   - Shoe.mov
+  - Glass.mov
+  - Eye.mov
+  - Tube.mov
   _playbackSpeed: 10
   _cameraQuad: {fileID: 408121932}
   _videoQuad: {fileID: 1472467970}
