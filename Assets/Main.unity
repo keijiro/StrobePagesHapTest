@@ -275,7 +275,7 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: 07c6fdba-c4d1-4905-9c53-f3cff6468621
-      m_Path: <MidiDevice>/note056
+      m_Path: <MidiDevice>/note091
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -1255,7 +1255,7 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: 07c6fdba-c4d1-4905-9c53-f3cff6468621
-      m_Path: <MidiDevice>/note058
+      m_Path: <MidiDevice>/note090
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -2301,7 +2301,7 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: 07c6fdba-c4d1-4905-9c53-f3cff6468621
-      m_Path: <MidiDevice>/note057
+      m_Path: <MidiDevice>/note088
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -2891,7 +2891,7 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: 07c6fdba-c4d1-4905-9c53-f3cff6468621
-      m_Path: <MidiDevice>/note059
+      m_Path: <MidiDevice>/note089
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -3061,11 +3061,11 @@ MonoBehaviour:
   <SourceMode>k__BackingField: 0
   <LowColor>k__BackingField: {r: 0, g: 0, b: 0, a: 1}
   <HighColor>k__BackingField: {r: 1, g: 1, b: 1, a: 1}
-  <SplitLevel>k__BackingField: 0.5
+  <SplitLevel>k__BackingField: 0.4
   <BlackColor>k__BackingField: {r: 0, g: 0, b: 0, a: 1}
-  <BlackLevel>k__BackingField: 0.5
+  <BlackLevel>k__BackingField: 0
   <WhiteColor>k__BackingField: {r: 1, g: 1, b: 1, a: 1}
-  <WhiteLevel>k__BackingField: 0.5
+  <WhiteLevel>k__BackingField: 1
   <ContourColor>k__BackingField: {r: 0, g: 0, b: 0, a: 1}
   <DitherType>k__BackingField: 2
   <DitherStrength>k__BackingField: 0.4
@@ -3898,7 +3898,7 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: 07c6fdba-c4d1-4905-9c53-f3cff6468621
-      m_Path: <MidiDevice>/note091
+      m_Path: <MidiDevice>/note056
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -4249,7 +4249,7 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: 07c6fdba-c4d1-4905-9c53-f3cff6468621
-      m_Path: <MidiDevice>/note090
+      m_Path: <MidiDevice>/note057
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -4483,12 +4483,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 257743718}
-  - {fileID: 1109762648}
-  - {fileID: 541364109}
-  - {fileID: 1376445048}
-  - {fileID: 1858145055}
   - {fileID: 1657320764}
+  - {fileID: 1858145055}
+  - {fileID: 1109762648}
+  - {fileID: 1376445048}
+  - {fileID: 541364109}
+  - {fileID: 257743718}
   m_Father: {fileID: 1060484555}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2044074273
