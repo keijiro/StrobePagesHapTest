@@ -36,11 +36,13 @@ public sealed class SourceSelector : MonoBehaviour
         UISelector.dataSource = this;
         UISelector.RegisterValueChangedCallback(evt => SelectSource(evt.newValue));
 
+        /*
         if (PlayerPrefs.HasKey(PrefKey))
         {
             var saved = PlayerPrefs.GetString(PrefKey);
             if (SourceList.Contains(saved)) SelectSource(UISelector.value = saved);
         }
+        */
     }
 }
 
