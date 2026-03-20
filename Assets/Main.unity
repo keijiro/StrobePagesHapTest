@@ -4326,7 +4326,6 @@ MonoBehaviour:
   - Graffiti.mov
   - Eye.mov
   - Bird.mov
-  - Tap.mov
   _cameraQuad: {fileID: 408121932}
   _videoQuad: {fileID: 1472467970}
   _target: {fileID: 1411473422}
